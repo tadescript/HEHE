@@ -1,4 +1,6 @@
 # HEHE
+Developed in Godot v3.2.3
+
 Simple software I made to have a few laughs.
 
 If this software appears in footage and/or pictures that end up in social media of any kind, I ask you to include a link to te following YouTube video: ,
