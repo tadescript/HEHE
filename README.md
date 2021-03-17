@@ -10,3 +10,5 @@ Thank You!
 Software Usage:
 
 Drag the software window to the center of the screen. The HEHE MEME is supposed to appear. After that, the MEME will appear in different places throughout the screen and you have to look for it.
+
+THE PROGRAM'S FONT IS NOT INSTALLED, MORE INFO IN 'FONT' FOLDER.
