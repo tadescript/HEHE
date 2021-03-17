@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Topbar/Topbar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Video/HEHEMEME.webm" type="VideoStream" id=2]
+[ext_resource path="res://Main/textures/bg.png" type="Texture" id=3]
+[ext_resource path="res://Main/Main.gd" type="Script" id=4]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="bg"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -329.0
+margin_top = -185.5
+margin_right = 329.0
+margin_bottom = 185.5
+stream = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vn1" type="VisibilityNotifier2D" parent="bg/VideoPlayer"]
+position = Vector2( 220, 280 )
+rect = Rect2( 0, 0, 1, 1 )
+
+[node name="vn2" type="VisibilityNotifier2D" parent="bg/VideoPlayer"]
+position = Vector2( 430, 70 )
+rect = Rect2( 0, 0, 1, 1 )
+
+[node name="Topbar" parent="." instance=ExtResource( 1 )]
+[connection signal="finished" from="bg/VideoPlayer" to="." method="_on_VideoPlayer_finished"]
+[connection signal="screen_entered" from="bg/VideoPlayer/vn1" to="." method="_on_vn1_screen_entered"]
+[connection signal="screen_exited" from="bg/VideoPlayer/vn1" to="." method="_on_vn1_screen_exited"]
+[connection signal="screen_entered" from="bg/VideoPlayer/vn2" to="." method="_on_vn2_screen_entered"]
+[connection signal="screen_exited" from="bg/VideoPlayer/vn2" to="." method="_on_vn2_screen_exited"]
