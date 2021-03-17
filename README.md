@@ -7,4 +7,4 @@ Thank You!
 
 Software Usage:
 
-Drag the software window to the center of the screen. The HEHE MEME is supposed to appear. After that, the MEME will appear in different places throughout the screen and you have to look for it by moving the software window across the screen.
+Drag the software window to the center of the screen. The HEHE MEME is supposed to appear. After that, the MEME will appear in different places throughout the screen and you have to look for it.
