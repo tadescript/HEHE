@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Topbar/Buttons/textures/icone_xis.png" type="Texture" id=1]
+[ext_resource path="res://Topbar/Buttons/Button.gd" type="Script" id=2]
+
+
+[node name="Button" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -255.0
+margin_bottom = -465.0
+color = Color( 1, 1, 1, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+icon_texture = ExtResource( 1 )
+index = 2
+
+[node name="icon" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -7.5
+margin_top = -7.5
+margin_right = 192.5
+margin_bottom = 192.5
+rect_scale = Vector2( 0.075, 0.075 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hb" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="hb" to="." method="_on_hb_gui_input"]
+[connection signal="mouse_entered" from="hb" to="." method="_on_hb_mouse_entered"]
+[connection signal="mouse_exited" from="hb" to="." method="_on_hb_mouse_exited"]
