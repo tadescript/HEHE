@@ -1,5 +1,5 @@
 # HEHE
-Developed in Godot v3.2.3
+Developed in Godot Engine v3.2.3
 
 Simple software I made to have a few laughs.
 
