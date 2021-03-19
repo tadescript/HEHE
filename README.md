@@ -3,7 +3,7 @@ Developed in Godot Engine v3.2.3 Mono
 
 Simple software I made to have a few laughs.
 
-If this software appears in footage and/or pictures that end up in social media of any kind, I ask you to include a link to te following YouTube video: ,
+If this software appears in footage and/or pictures that end up in social media of any kind, I ask you to include a link to te following YouTube video: https://youtu.be/Zs3pEwLd724,
 or the following disclaimer, in your preferred language: "original software by @tadescript".
 Thank You!
 
